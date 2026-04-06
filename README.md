@@ -39,7 +39,4 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
 ```bash
 pip install guessit requests colorama
 ```
-Or install everything by running:
-```bash
-pip install -r requirements.txt
-```
+Or install everything by running "NOOB SETUP.bat"
