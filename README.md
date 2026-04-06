@@ -51,12 +51,12 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
 
 * `ffmpeg` must be installed and available in your system `PATH`.
 
-### Installation
+### Installing packages
 
 ```bash
 pip install guessit requests colorama
 ```
-Or install everything by running:
+Or install everything (including Python, ffmpeg and pip packages) by running:
 ```bash
 NOOB SETUP.bat
 ```
