@@ -1,42 +1,62 @@
-<a href="https://t.me/streammiii">
-  <img src="https://img.shields.io/badge/JOIN%20TELEGRAM-26A6E1?style=for-the-badge&logo=telegram&logoColor=white">
-</a>
-
 # StreamMii
-A simple tool that converts media into Wii compatible formats for smooth playback
 
-## Features
+<p align="center">
+  <a href="https://t.me/streammiii">
+    <img src="https://img.shields.io/badge/JOIN%20TELEGRAM-26A6E1?style=for-the-badge&logo=telegram&logoColor=white" alt="Join Telegram">
+  </a>
+</p>
 
-- GPU acceleration support:
-  - AMD
-  - NVIDIA (NVENC)
-  - Intel (QSV)
-  - CPU fallback (not recommended due to lower quality/performance)
-- Automatic media metadata handling
+A simple tool that converts media into Wii compatible formats for smooth playback.
 
-## Output Settings
+---
 
-- **Resolution:** 640x360  
-- **Scaling:** Lanczos resampling  
-- **Bitrate:** 1000 kbps
-- **FPS:** 30 or lower 
+## 🚀 Features
 
-## Supported Media Types
+* **GPU Acceleration Support:**
+    * **AMD**
+    * **NVIDIA** (NVENC)
+    * **Intel** (QSV)
+    * **CPU fallback** (not recommended due to lower quality/performance)
+* **Automatic media metadata handling**
 
-- Movies  
-- TV Shows  
-- Adult Content  
-- Audio Content  
-- Documentaries  
-- K-Drama  
-- Anime  
-- Sports  
-### More coming soon!
+---
 
-## System Requirements
+## 🛠️ Output Settings
 
-- `ffmpeg` installed and available in your system `PATH`
+| Parameter | Configuration |
+| :--- | :--- |
+| **Resolution** | 640x360 |
+| **Scaling** | Lanczos resampling |
+| **Bitrate** | 1000 kbps |
+| **FPS** | 30 or lower |
+
+---
+
+## 📁 Supported Media Types
+
+* Movies
+* TV Shows
+* Adult Content
+* Audio Content
+* Documentaries
+* K-Drama
+* Anime
+* Sports
+
+> **More coming soon!**
+
+---
+
+## 💻 System Requirements
+
+* `ffmpeg` must be installed and available in your system `PATH`.
+
+### Installation
+
 ```bash
 pip install guessit requests colorama
 ```
-Or install everything by running "NOOB SETUP.bat"
+Or install everything by running:
+```bash
+NOOB SETUP.bat
+```
