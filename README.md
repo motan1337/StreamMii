@@ -1,4 +1,5 @@
 A fork from my friend phmn (TwinkPad). Why did I fork it? Well I did not want to interfer with his work with my changes and work so I forked it to apply my changes and optimizations.
+
 My future ideas: Porting ffmpeg on Apple Silicon to have StreamMii working on it and a simple installer for MacOS when I will have ffmpeg port working on Apple Silicon.
 
 # StreamMii
