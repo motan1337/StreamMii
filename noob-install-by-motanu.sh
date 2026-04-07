@@ -49,7 +49,7 @@ echo
 echo "[!] Updating package lists..."
 pkg_update
 
-echo "[!] Installing Python 3 + pip..."
+echo "[!] Installing Python 3 + pip + venv..."
 case "$PKG_MGR" in
     apt)     pkg_install python3 python3-pip python3-venv ;;
     dnf|yum) pkg_install python3 python3-pip ;;
@@ -65,37 +65,39 @@ else
     echo "[X] Python not found after install." >&2
     exit 1
 fi
-echo "[!] Using Python: $PYTHON_EXE ($($PYTHON_EXE --version 2>&1))"
+echo "[!] Found Python: $PYTHON_EXE ($($PYTHON_EXE --version 2>&1))"
 
-#  Updating pip and install pip
-echo "[!] Upgrading pip..."
-$PYTHON_EXE -m pip install --upgrade pip
+VENV_DIR="/opt/myapp-venv"
+echo
+echo "[!] Creating virtual environment at $VENV_DIR..."
+$PYTHON_EXE -m venv "$VENV_DIR"
+
+PYTHON_EXE="$VENV_DIR/bin/python"
+PIP_EXE="$VENV_DIR/bin/pip"
+
+echo "[!] Upgrading pip inside venv..."
+$PIP_EXE install --upgrade pip
 
 echo "[!] Installing Python packages..."
-$PYTHON_EXE -m pip install \
+$PIP_EXE install \
     "requests>=2.31.0" \
     "guessit>=3.2.0"   \
     "colorama>=0.4.6"
 
 #  Install ffmpeg 
-#  Replaces: choco install ffmpeg-full
-#  On Fedora/RHEL full ffmpeg needs rpm fusion
 echo
 echo "[!] Installing FFmpeg..."
 case "$PKG_MGR" in
-    apt)
-        pkg_install ffmpeg
-        ;;
+    apt)    pkg_install ffmpeg ;;
     dnf)
         if ! rpm -q rpmfusion-free-release &>/dev/null; then
-            echo "[!] Enabling RPM Fusion (free) for full FFmpeg codec support..."
+            echo "[!] Enabling RPM Fusion for full FFmpeg..."
             dnf install -y \
                 "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm" \
                 || true
         fi
-        pkg_install ffmpeg
-        ;;
-    yum)  pkg_install ffmpeg ;;
+        pkg_install ffmpeg ;;
+    yum)    pkg_install ffmpeg ;;
     pacman) pkg_install ffmpeg ;;
     zypper) pkg_install ffmpeg ;;
     apk)    pkg_install ffmpeg ;;
@@ -105,13 +107,16 @@ echo
 echo "════════════════ VERIFICATION ════════════════"
 
 echo
-echo "▸ Python:"
+echo "▸ Python (venv):"
 $PYTHON_EXE --version
+
+echo
+echo "▸ Venv location: $VENV_DIR"
 
 echo
 echo "▸ Pip packages:"
 for pkg in requests guessit colorama; do
-    $PYTHON_EXE -m pip show "$pkg" 2>/dev/null | grep -E "^(Name|Version)" || \
+    $PIP_EXE show "$pkg" 2>/dev/null | grep -E "^(Name|Version)" || \
         echo "  [X] $pkg — not found"
 done
 
@@ -121,4 +126,9 @@ ffmpeg -version 2>&1 | head -1
 
 echo
 echo "════════════════ ALL DONE! ════════════════"
+echo
+echo "[!] To use the venv in your own scripts:"
+echo "    source $VENV_DIR/bin/activate"
+echo "    python your_script.py"
+echo
 read -rp "Press Enter to exit..."
