@@ -1,8 +1,4 @@
-<p align="right">
-  <a href="https://t.me/streammiii">
-    <img src="https://img.shields.io/badge/JOIN%20TELEGRAM-26A6E1?style=for-the-badge&logo=telegram&logoColor=white" alt="Join Telegram">
-  </a>
-</p>
+A fork from my friend phmn (TwinkPad). Why did i fork it? Well i did not want to interfer with his work with my changes and work so i forked it to apply my changes and optimizations.
 
 # StreamMii
 
