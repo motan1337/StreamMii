@@ -73,4 +73,5 @@ pip install guessit requests colorama
 ### How to use the noob installer for linux.
 ```
 sudo chmod +x noob-install-by-motanu.sh
-./noob-install-by-motanu.sh the script will auto promt for evelevated prevelages or just simply do sudo ./noob-install-by-motanu.sh
+./noob-install-by-motanu.sh the script will auto promt for evelevated prevelages
+Or just simply do sudo ./noob-install-by-motanu.sh
