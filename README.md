@@ -70,7 +70,7 @@ pip install guessit requests colorama
 
 ```
 ### How to use the noob installer for linux.
+Works on Debian/Ubuntu/Mint, Fedora/RHEL/CentOS, Arch/Manjaro, openSUSE, Alpine.
 ```
 sudo chmod +x noob-install-by-motanu.sh
-./noob-install-by-motanu.sh the script will promt for evelevated prevelages basically enter your password...
-Or just simply do sudo ./noob-install-by-motanu.sh
+./noob-install-by-motanu.sh
