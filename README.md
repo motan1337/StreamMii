@@ -79,4 +79,3 @@ sudo chmod +x noob-install-by-motanu.sh
 ```
 Just run the executable either from release either from repo
 Or if you feel freaky you can use the batchfile.
-
