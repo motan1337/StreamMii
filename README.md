@@ -74,3 +74,8 @@ Works on Debian/Ubuntu/Mint, Fedora/RHEL/CentOS, Arch/Manjaro, openSUSE, Alpine.
 ```
 sudo chmod +x noob-install-by-motanu.sh
 ./noob-install-by-motanu.sh
+```
+### Windows
+```
+Just run the executable either from release either repo
+Alternatily you can use the .bat file
