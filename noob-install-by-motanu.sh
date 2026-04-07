@@ -127,8 +127,4 @@ ffmpeg -version 2>&1 | head -1
 echo
 echo "════════════════ ALL DONE! ════════════════"
 echo
-echo "[!] To use the venv in your own scripts:"
-echo "    source $VENV_DIR/bin/activate"
-echo "    python your_script.py"
-echo
 read -rp "Press Enter to exit..."
