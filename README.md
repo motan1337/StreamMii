@@ -77,5 +77,6 @@ sudo chmod +x noob-install-by-motanu.sh
 ```
 ### Windows
 ```
-Just run the executable either from release either repo
-Alternatily you can use the .bat file
+Just run the executable either from release either from repo
+Or if you feel freaky you can use the .bat file 
+
