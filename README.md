@@ -1,4 +1,5 @@
-A fork from my friend phmn (TwinkPad). Why did i fork it? Well i did not want to interfer with his work with my changes and work so i forked it to apply my changes and optimizations.
+A fork from my friend phmn (TwinkPad). Why did I fork it? Well I did not want to interfer with his work with my changes and work so I forked it to apply my changes and optimizations.
+My future ideas: Porting ffmpeg on Apple Silicon to have StreamMii working on it and a simple installer for MacOS when I will have ffmpeg port working on Apple Silicon.
 
 # StreamMii
 
@@ -12,9 +13,8 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
     * **AMD**
     * **NVIDIA** (NVENC)
     * **Intel** (QSV)
-    * **CPU fallback** (not recommended due to lower quality/performance)
+    * **CPU fallback** (not recommended due to lower quality & performance)
 * **Automatic media metadata handling**
-
 ---
 
 ## 🛠️ Output Settings
@@ -24,7 +24,7 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
 | **Resolution** | 640x360 or 640x480 depending on aspect ratio |
 | **Scaling** | Lanczos resampling |
 | **Bitrate** | 1000 kbps |
-| **FPS** | Usually matches source media |
+| **FPS** | **Usually** matches source media |
 
 ---
 
@@ -56,8 +56,6 @@ A simple tool that converts media into Wii compatible formats for smooth playbac
 
   </details>
 
-> **More coming soon!**
-
 ---
 
 ## 💻 System Requirements
@@ -73,5 +71,5 @@ pip install guessit requests colorama
 ### How to use the noob installer for linux.
 ```
 sudo chmod +x noob-install-by-motanu.sh
-./noob-install-by-motanu.sh the script will auto promt for evelevated prevelages
+./noob-install-by-motanu.sh the script will promt for evelevated prevelages basically enter your password...
 Or just simply do sudo ./noob-install-by-motanu.sh
