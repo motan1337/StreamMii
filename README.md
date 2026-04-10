@@ -1,7 +1,5 @@
 A fork from my friend phmn (TwinkPad). Why did I fork it? Well I did not want to interfer with his work with my changes and work so I forked it to apply my changes and optimizations.
 
-My future ideas: Porting ffmpeg on Apple Silicon to have StreamMii working on it and a simple installer for MacOS when I will have ffmpeg port working on Apple Silicon.
-
 # StreamMii
 
 A simple tool that converts media into Wii compatible formats for smooth playback.
@@ -79,3 +77,21 @@ sudo chmod +x noob-install-by-motanu.sh
 ```
 Just run the executable either from release either from repo
 Or if you feel freaky you can use the batchfile.
+
+```
+### MacOS with Apple Silicon
+```
+You are on your own but i will give you the sources you need.
+There are multiple sources of ffmpeg for Apple Silicon, and each have their ups and downs, its up to you to use the best one for you.
+1. https://github.com/Vargol/ffmpeg-apple-arm64-build?tab=readme-ov-file
+2. https://gitlab.com/martinr92/ffmpeg
+3. https://osxexperts.net/
+Now you will need python:
+https://www.python.org/downloads/release/python-3144/
+```
+
+### MacOs with Intel
+```
+You are on your own but i will give you the sources you need.
+ffmpeg: https://evermeet.cx/ffmpeg/ffmpeg-123838-gb462674645.7z
+python: https://www.python.org/downloads/release/python-3144/
