@@ -81,7 +81,8 @@ Or if you feel freaky you can use the batchfile.
 ### MacOS with Apple Silicon
 ```
 You are on your own but i will give you the sources you need.
-There are multiple sources of ffmpeg for Apple Silicon, and each have their ups and downs, its up to you to use the best one for you.
+There are multiple sources of ffmpeg for Apple Silicon, and each have their ups and downs,
+its up to you to use the best one for you.
 1. https://github.com/Vargol/ffmpeg-apple-arm64-build?tab=readme-ov-file
 2. https://gitlab.com/martinr92/ffmpeg
 3. https://osxexperts.net/
