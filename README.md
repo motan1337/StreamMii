@@ -89,7 +89,7 @@ Now you will need python:
 https://www.python.org/downloads/release/python-3144/
 ```
 
-### MacOs with Intel
+### MacOS with Intel
 ```
 You are on your own but i will give you the sources you need.
 ffmpeg: https://evermeet.cx/ffmpeg/ffmpeg-123838-gb462674645.7z
