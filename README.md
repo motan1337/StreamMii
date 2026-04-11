@@ -95,3 +95,28 @@ https://www.python.org/downloads/release/python-3144/
 You are on your own but i will give you the sources you need.
 ffmpeg: https://evermeet.cx/ffmpeg/ffmpeg-123838-gb462674645.7z
 python: https://www.python.org/downloads/release/python-3144/
+```
+### ARM
+ARM (AARCH64) should work on those fine: 
+Ubuntu 22.04, 24.04
+Linux Mint 21, 22, 22.3
+Debian 11, 12
+Raspberry Pi OS Bookworm and Bullseye
+Arch linux 
+Manjaro
+Fedora 38,39, 40
+openSUSE Leap, Tumbleweed
+Alpine 3.18+
+
+ARMV6, ARMV7
+Raspberry Pi OS Bookworm and Bullseye
+Debian 11, 12
+
+Partially working / limited:
+Fedora on armv7 (Fedora dropped 32-bit arm since F37)
+Alpine on armv6 (FFmpeg may be missing from repo, build from source)
+RHEL /CentOS (FFmpeg not in base repos, needs EPEL + RPM Fusion added manually)
+Ubuntu 20.04 (python3-venv may need manual install)
+
+NOT COMPATIBLE!!!
+Gentoo, NixOS, Void Linux, Slackware, Android (Termux)
