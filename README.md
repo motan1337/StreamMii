@@ -121,10 +121,12 @@ Ubuntu 20.04 (python3-venv may need manual install)
 NOT COMPATIBLE!!!
 Gentoo, NixOS, Void Linux, Slackware, Android (Termux)
 
-### Monolithic version:
-This version is a monolithic version that is combines all the dependencies in one script.
-It is diffrent that the standard version with:
-- Big bug fixes
-- 3x faster probing
-- secure imdb
-- And more!
+### 🔨 StreamMii-Monolithic-Alpha
+```
+3x Times faster probing!
+When fails, now it fails with a clean error instead of crashing!
+New H.246 encoder for non standard pixel formats that will not ruin the playback!
+Also its now more safe to run it, it won't delete itself or delete anything else or outside of it. (The standard monolithic version and cucu version may delete itself or files around it!)
+Bug fixes!
+Secure IMDB!
+```
